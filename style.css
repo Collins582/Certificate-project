@@ -21,15 +21,17 @@ header nav a {
   color: #fff;
   margin-left: 1em;
   text-decoration: none;
+  transition: color 0.3s;
 }
 header nav a:hover {
-  text-decoration: underline;
+  color: #6c5ce7;
 }
 .hero {
   text-align: center;
   padding: 3em 1em;
   background: #6c5ce7;
   color: white;
+  animation: fadeSlide 1.5s ease-out;
 }
 .hero button {
   padding: 0.5em 1.5em;
@@ -38,6 +40,11 @@ header nav a:hover {
   background: #fff;
   color: #6c5ce7;
   cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+.hero button:hover {
+  background: #ddd;
+  transform: scale(1.05);
 }
 .highlights {
   display: flex;
@@ -49,6 +56,10 @@ header nav a:hover {
   background: white;
   padding: 1em;
   border-radius: 8px;
+  transition: transform 0.4s;
+}
+.highlight-card:hover {
+  transform: translateY(-5px);
 }
 .products {
   padding: 2em;
@@ -56,6 +67,12 @@ header nav a:hover {
 .filters button {
   margin: 0.5em;
   padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+.filters button:hover {
+  background: #6c5ce7;
+  color: white;
 }
 .product-grid {
   display: grid;
@@ -68,6 +85,11 @@ header nav a:hover {
   padding: 1em;
   border-radius: 8px;
   text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 .explore, .testimonial, .about, .blog {
   padding: 2em;
@@ -83,6 +105,10 @@ header nav a:hover {
   padding: 1em;
   margin: 0.5em;
   border-radius: 8px;
+  transition: transform 0.3s;
+}
+.feature:hover {
+  transform: translateY(-5px);
 }
 footer {
   background: #222;
@@ -94,5 +120,20 @@ footer {
 footer a {
   color: #fff;
   text-decoration: underline;
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: #6c5ce7;
 }
 
+/* Animation keyframes */
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
