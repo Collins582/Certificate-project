@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collins Technologies</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="logo">COLLINS TECHNOLOGIES</div>
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#explore">Explore</a>
+      <a href="#testimonial">Testimonials</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Empower Your Business with Collins AI</h1>
+    <p>Revolutionary AI & Tech solutions for your success</p>
+    <button onclick="alert('Viewing Collections...')">View Solutions</button>
+  </section>
+
+  <section class="highlights">
+    <div class="highlight-card">AI Chatbots</div>
+    <div class="highlight-card">Web Development</div>
+    <div class="highlight-card">Tech Hardware</div>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Featured Products</h2>
+    <div class="filters">
+      <button onclick="filterProducts('all')">All</button>
+      <button onclick="filterProducts('ai')">AI</button>
+      <button onclick="filterProducts('web')">Web</button>
+      <button onclick="filterProducts('hardware')">Hardware</button>
+    </div>
+    <div class="product-grid">
+      <div class="product-card" data-category="ai">AI Customer Support Bot</div>
+      <div class="product-card" data-category="web">Business Website Package</div>
+      <div class="product-card" data-category="hardware">High-Performance Laptop</div>
+      <div class="product-card" data-category="ai">AI Email Assistant</div>
+      <div class="product-card" data-category="web">E-Commerce Site Setup</div>
+      <div class="product-card" data-category="hardware">Office Server Setup</div>
+    </div>
+  </section>
+
+  <section class="explore" id="explore">
+    <h2>Explore by Category</h2>
+    <div class="categories">
+      <span>AI</span>
+      <span>Web</span>
+      <span>Devices</span>
+      <span>Hosting</span>
+    </div>
+  </section>
+
+  <section class="testimonial" id="testimonial">
+    <h2>What people say</h2>
+    <blockquote>
+      "Collins Technologies transformed our customer service with their AI bots. Excellent team and service!"
+      <br><cite>- Sarah, Business Owner</cite>
+    </blockquote>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Why you'll love working with us</h2>
+    <div class="features">
+      <div class="feature">💖 Personalized Care for Your Project</div>
+      <div class="feature">🤝 Dedicated Customer Support</div>
+      <div class="feature">💰 Transparent & Fair Pricing</div>
+    </div>
+  </section>
+
+  <section class="blog">
+    <h2>From our Blog</h2>
+    <article>
+      <h3>How to scale your business with AI</h3>
+      <p>Discover strategies to automate operations and grow your reach using smart AI tools from Collins Technologies.</p>
+      <button onclick="alert('Reading more...')">Read More</button>
+    </article>
+  </section>
+
+  <footer id="contact">
+    <p>© 2025 Collins Technologies | <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
